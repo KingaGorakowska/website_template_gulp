@@ -1,0 +1,217 @@
+//main style
+
+body {
+  margin: 0;
+  background-color: $light-gray;
+  overflow-x: hidden;
+  font-family: $font-r !important;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-shadow: $shadow;
+  overflow-x: hidden;
+  padding-top:50px;
+  height: 100%;
+}
+
+.seperator-margin {
+  padding: 50px 0;
+}
+.seperator {
+  margin: 45px 0;
+}
+.seperator2 {
+  margin: 90px 0;
+}
+.seperator3 {
+  margin: 20px 0;
+}
+
+.icons {
+  padding: 5px;
+  font-size: 18px;
+  color:$white;
+}
+
+.header_section{
+  position: relative;
+  .top_img {
+    width: 100%;
+    height: auto;
+  }
+  .text-section {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      background: $backgraund-text;
+      z-index: 8;
+      padding: 20px 0;
+      width: 100%;
+      display: block;
+      background-position: 0 30%;
+    }
+    .top-header {
+      margin-bottom: 1.25rem;
+      font-size: 2.75rem;
+    }
+    .top-text {
+      font-size: 1.1rem;
+    }
+    .top-button {
+      margin: .5rem 0;
+      padding: .2rem 4rem;
+    }
+    .lead {
+      font-size: 25px;
+    }
+    .subtitle {
+      margin: 0 0 2em 0;
+    }
+    .middle{
+      display: inline-block;
+      padding: 0 10px;
+      white-space: nowrap;
+    }
+    .left, .right{
+      width: 50%;
+    }
+    .elements, .element{
+      display: flex;
+    }
+    .lines{
+      border-style: solid;
+      border-width: 1px;
+      border-left: none;
+      border-right: none;
+      height: 5px;
+      width: 100%;
+      align-self: center;
+      &.gold{
+        border-color: $backgraund-text;
+      }
+      &.white{
+        border-color: white;
+      }
+      &.black{
+        border-color: black;
+      }
+    }
+  }
+  
+.img-introduction {
+  width: 60%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+.img-introduction-main {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+.img-portfolio {
+  opacity: 1;
+}
+.img-portfolio:hover {
+  opacity: 0.7;
+}
+a {
+  color: $yellow
+}
+
+//*img-efect
+.hvrbox,
+.hvrbox * {
+  box-sizing: border-box;
+}
+.hvrbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.hvrbox img {
+  max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+  display: block;
+}
+.hvrbox .hvrbox-layer_top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: $dark-gray-img;
+  color: $white;
+  padding: 15px;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+  opacity: 1;
+}
+.hvrbox .hvrbox-text {
+  text-align: center;
+  font-size: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+  font-size: 15px;
+  border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+  border-top: 1px solid rgba(179, 179, 179, 0.7);
+  margin-top: 5px;
+  padding-top: 2px;
+}
+.hvrbox.active .hvrbox-text_mobile {
+  display: block;
+}
+.hvrbox a {
+  color: $white;
+}
+.nav-item {
+  width: auto;
+}
+.navbar-nav {
+  justify-content: space-between;
+}
+.nav-link {
+  &:hover {
+    transition: color .3s ease;
+    &:after {
+      width: 100%;
+      background: #999;
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease;
+  }
+}
+
+
+
+
+
+
+
