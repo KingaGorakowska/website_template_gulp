@@ -7,30 +7,40 @@ html {
   font-size: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+// headlines
+h1, h2, h3, h4, h5, h6{
   font-family: $font-m;
+  color: $text-dark;
+  font-weight: 300;
+  line-height: 1.4;
 }
 
-h1, .h1, .top-header{
+h1{
   font-size:3.2rem;
+  color: $text-lightest;
 }
 
-h2, .h2{
-  font-size: 3rem !important;
+h2{
   text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 24px;
+}
+h3{
+  font-size: 2.10rem;
+  color: $text-lightest;
 }
 
-h3, .h3{
-  font-size: 2.10rem !important;
-  text-transform: lowercase;
+h4, h5, h6{
+  font-size: 2rem;
+  margin-bottom: 18px;
 }
+
+// main text
 
 p {
-  font-size: 1.80rem;
-  line-height: 2.2rem;
-  font-weight: normal;
-  text-align: justify;
-  margin-bottom: 20px;
+  color: $text-paragraph;
+  @include basic-text(1.80rem, 2.6rem);
+  @include padding-margin(0,0);
 }
 
 p .text-uppercase{
@@ -52,20 +62,20 @@ nav li a {
   font-size: 35px;
 }
 
-@media (max-width: 991px){
+@media (max-width: $large){
   html {
     font-size: 11px;
   }
-
-  h1, .h1, .top-header{
+  
+  h1{
     font-size:3.10rem;
   }
 
-  h2, .h2{
+  h2{
     font-size: 2.90rem !important;
   }
 
-  h3, .h3{
+  h3{
     font-size: 2rem !important;
   }
 
@@ -99,20 +109,20 @@ nav li a {
 
 }
 
-@media (max-width: 768px){
+@media (max-width: $medium){
   html {
     font-size: 10px;
   }
 
-  h1, .h1, .top-header{
+  h1{
     font-size:3rem;
   }
 
-  h2, .h2{
+  h2{
     font-size: 2.80rem !important;
   }
 
-  h3, .h3{
+  h3{
     font-size: 1.90rem !important;
   }
 
@@ -145,21 +155,21 @@ nav li a {
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: $small) {
 
   html {
     font-size: 8px;
   }
 
-  h1, .h1, .top-header{
+  h1{
     font-size:2.90rem;
   }
 
-  h2, .h2{
+  h2{
     font-size: 2.70rem !important;
   }
 
-  h3, .h3{
+  h3{
     font-size: 1.80rem !important;
   }
 

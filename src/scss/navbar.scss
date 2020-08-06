@@ -1,6 +1,6 @@
 #top-head {
     overflow: hidden;
-    background-color:$gray;
+    background-color:$background-gray;
     position: fixed;
     top: 0;
     width: 100%;
@@ -15,14 +15,14 @@
   }
   
   .color-text-navbar {
-    color: $white!important;
+    color: $text-lightest!important;
     font-size: 14px;
   }
   
   a:hover,
   .nav-item.active a,
   .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-    color: $yellow !important;
+    color: $accent-color !important;
     font-weight: bolder;
   }
   
